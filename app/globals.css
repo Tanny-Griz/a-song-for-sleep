@@ -48,6 +48,48 @@ a {
   outline-offset: 3px;
 }
 
+.status-typewriter {
+  --type-delay: 0s;
+  --type-steps: 16;
+  --type-width: 18ch;
+  display: inline-block;
+  max-width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 1px solid #4f9fc4;
+  opacity: 0;
+  animation:
+    status-type 1s steps(var(--type-steps), end) var(--type-delay) forwards,
+    status-caret 0.72s step-end var(--type-delay) 5;
+}
+
+@keyframes status-type {
+  0% {
+    max-width: 0;
+    opacity: 1;
+  }
+
+  1% {
+    opacity: 1;
+  }
+
+  100% {
+    max-width: var(--type-width);
+    opacity: 1;
+  }
+}
+
+@keyframes status-caret {
+  0%,
+  100% {
+    border-color: transparent;
+  }
+
+  50% {
+    border-color: #4f9fc4;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
@@ -56,5 +98,11 @@ a {
     animation-iteration-count: 1 !important;
     scroll-behavior: auto !important;
     transition-duration: 0.01ms !important;
+  }
+
+  .status-typewriter {
+    max-width: none;
+    border-right: 0;
+    opacity: 1;
   }
 }

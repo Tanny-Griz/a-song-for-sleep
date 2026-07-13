@@ -7,24 +7,28 @@ const statusRows = [
     label: "Tenant detected",
     status: "Normal",
     color: "#58c9a3",
+    delay: "0.25s",
     Icon: UserRound
   },
   {
     label: "Age: 93",
     status: "Verified",
     color: "#4f9fc4",
+    delay: "0.85s",
     Icon: CalendarDays
   },
   {
     label: "Digital profile: incomplete",
     status: "Gap",
     color: "#e5aa42",
+    delay: "1.35s",
     Icon: FileUser
   },
   {
     label: "Prediction confidence: low",
     status: "Warning",
     color: "#d9604b",
+    delay: "2.15s",
     Icon: ChartNoAxesColumn
   }
 ];
@@ -92,10 +96,9 @@ export default function HomePage() {
                 <p className="font-mono text-[0.64rem] font-medium uppercase tracking-[0.18em] text-[#637181]">
                   System status
                 </p>
-                <span className="size-1.5 rounded-full bg-[#58c9a3]" />
               </div>
               <dl className="space-y-3 text-sm text-[#07111f]">
-                {statusRows.map(({ label, status, color, Icon }) => (
+                {statusRows.map(({ label, status, color, delay, Icon }) => (
                   <div
                     className="grid grid-cols-[1.35rem_1fr_auto] items-center gap-3 border-b border-[#e3eaf0] pb-2 last:border-b-0 last:pb-0"
                     key={label}
@@ -106,7 +109,18 @@ export default function HomePage() {
                         className="size-4 text-[#8a98a6]"
                         strokeWidth={1.7}
                       />
-                      <span className="font-medium">{label}</span>
+                      <span
+                        className="status-typewriter font-mono text-[0.82rem] font-medium tracking-[-0.01em]"
+                        style={
+                          {
+                            "--type-delay": delay,
+                            "--type-steps": label.length,
+                            "--type-width": `${label.length + 1}ch`
+                          } as React.CSSProperties
+                        }
+                      >
+                        {label}
+                      </span>
                     </dt>
                     <dd className="flex items-center gap-2 font-mono text-[0.62rem] uppercase tracking-[0.12em] text-[#637181]">
                       <span
