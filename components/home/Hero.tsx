@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import {
   CalendarDays,
   ChartNoAxesColumn,
@@ -114,13 +113,6 @@ export function Hero() {
               ))}
             </dl>
           </div>
-
-          <Link
-            className="mt-7 inline-flex w-fit items-center rounded border border-[#07111f] bg-[#07111f] px-5 py-3 text-sm font-semibold text-white transition hover:border-[#2b7fa7] hover:bg-[#2b7fa7]"
-            href="/analysis"
-          >
-            Enter the Analysis
-          </Link>
         </div>
       </div>
     </section>
