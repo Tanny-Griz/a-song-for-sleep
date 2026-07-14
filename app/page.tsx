@@ -1,5 +1,6 @@
 import { BuildingKnowsSection } from "@/components/home/BuildingKnowsSection";
 import { Hero } from "@/components/home/Hero";
+import { IncompleteProfileSection } from "@/components/home/IncompleteProfileSection";
 import { PromiseSection } from "@/components/home/PromiseSection";
 
 export default function HomePage() {
@@ -8,6 +9,7 @@ export default function HomePage() {
       <Hero />
       <PromiseSection />
       <BuildingKnowsSection />
+      <IncompleteProfileSection />
     </main>
   );
 }

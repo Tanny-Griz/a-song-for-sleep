@@ -137,6 +137,36 @@ a {
   animation: knowledge-dot-in 0.5s ease forwards;
 }
 
+.incomplete-card::before,
+.incomplete-card::after {
+  content: "";
+  position: absolute;
+  width: 1.25rem;
+  height: 1.25rem;
+  border-color: #cf6c65;
+  opacity: 0.75;
+}
+
+.incomplete-card::before {
+  top: 0.6rem;
+  left: 0.6rem;
+  border-left: 1px solid;
+  border-top: 1px solid;
+}
+
+.incomplete-card::after {
+  right: 0.6rem;
+  bottom: 0.6rem;
+  border-right: 1px solid;
+  border-bottom: 1px solid;
+}
+
+.incomplete-card {
+  animation:
+    promise-rise 0.7s ease both,
+    incomplete-signal 3.5s ease-in-out infinite;
+}
+
 @keyframes promise-rise {
   from {
     opacity: 0;
@@ -212,6 +242,17 @@ a {
   }
 }
 
+@keyframes incomplete-signal {
+  0%,
+  100% {
+    box-shadow: 0 16px 45px rgba(105, 35, 28, 0.08);
+  }
+
+  50% {
+    box-shadow: 0 18px 52px rgba(201, 77, 69, 0.14);
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
@@ -236,7 +277,8 @@ a {
   .promise-dot,
   .knowledge-donut,
   .knowledge-wave,
-  .knowledge-forecast-dot {
+  .knowledge-forecast-dot,
+  .incomplete-card {
     animation: none;
   }
 
