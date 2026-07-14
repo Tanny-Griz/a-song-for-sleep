@@ -1,5 +1,6 @@
 import { BuildingKnowsSection } from "@/components/home/BuildingKnowsSection";
 import { Hero } from "@/components/home/Hero";
+import { HumanDataProfileSection } from "@/components/home/HumanDataProfileSection";
 import { IncompleteProfileSection } from "@/components/home/IncompleteProfileSection";
 import { PromiseSection } from "@/components/home/PromiseSection";
 
@@ -10,6 +11,7 @@ export default function HomePage() {
       <PromiseSection />
       <BuildingKnowsSection />
       <IncompleteProfileSection />
+      <HumanDataProfileSection />
     </main>
   );
 }

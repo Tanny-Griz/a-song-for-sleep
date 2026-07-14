@@ -167,6 +167,29 @@ a {
     incomplete-signal 3.5s ease-in-out infinite;
 }
 
+.profile-orbit::before,
+.profile-orbit::after {
+  content: "";
+  position: absolute;
+  inset: 1.5rem;
+  border: 1px solid rgba(79, 137, 173, 0.18);
+  border-radius: 999px;
+}
+
+.profile-orbit::after {
+  inset: 0.75rem;
+  border-color: rgba(79, 137, 173, 0.12);
+}
+
+.profile-orbit {
+  animation: profile-orbit-pulse 3.2s ease-in-out infinite;
+}
+
+.profile-confidence-fill {
+  width: 5%;
+  animation: profile-confidence-grow 1s ease 0.25s both;
+}
+
 @keyframes promise-rise {
   from {
     opacity: 0;
@@ -253,6 +276,27 @@ a {
   }
 }
 
+@keyframes profile-orbit-pulse {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(79, 137, 173, 0);
+  }
+
+  50% {
+    box-shadow: 0 0 0 10px rgba(79, 137, 173, 0.1);
+  }
+}
+
+@keyframes profile-confidence-grow {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 5%;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
@@ -278,7 +322,9 @@ a {
   .knowledge-donut,
   .knowledge-wave,
   .knowledge-forecast-dot,
-  .incomplete-card {
+  .incomplete-card,
+  .profile-orbit,
+  .profile-confidence-fill {
     animation: none;
   }
 
@@ -292,5 +338,9 @@ a {
 
   .knowledge-forecast-dot {
     opacity: 1;
+  }
+
+  .profile-confidence-fill {
+    width: 5%;
   }
 }
