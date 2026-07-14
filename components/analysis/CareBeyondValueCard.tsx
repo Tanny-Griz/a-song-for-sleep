@@ -125,7 +125,7 @@ export function CareBeyondValueCard() {
       </div>
 
       <AnalysisKeyIdea>
-        Care is not data. Love is not a metric. Dignity is not for sale.
+        A person is more than what a system can measure, predict, or use.
       </AnalysisKeyIdea>
     </article>
   );

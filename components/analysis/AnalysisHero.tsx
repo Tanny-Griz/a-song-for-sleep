@@ -18,7 +18,7 @@ export function AnalysisHero() {
       <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(255,255,255,0.72),rgba(238,245,251,0.74))]" />
       <div className="relative z-10 mx-auto grid max-w-7xl gap-10 lg:grid-cols-[0.58fr_0.42fr] lg:items-center">
         <div className="promise-reveal max-w-5xl">
-          <h1 className="font-serif text-[clamp(5rem,13vw,9.5rem)] leading-[0.86] text-[#07111f]">
+          <h1 className="font-serif text-[clamp(4rem,18vw,6.7rem)] leading-[0.82] text-[#07111f] sm:text-[clamp(5.5rem,11vw,7.8rem)] lg:text-[clamp(5.8rem,8vw,8.8rem)]">
             Marxist Analysis
           </h1>
           <p className="mt-7 max-w-4xl text-xl leading-8 tracking-[0.08em] text-[#4f7897] sm:text-2xl sm:leading-10">

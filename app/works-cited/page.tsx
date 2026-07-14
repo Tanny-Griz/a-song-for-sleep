@@ -5,7 +5,7 @@ export default function WorksCitedPage() {
         <p className="font-mono text-xs uppercase tracking-[0.18em] text-slate-500">
           MLA Works Cited
         </p>
-        <h1 className="mt-4 font-serif text-5xl leading-tight text-slate-950 sm:text-6xl">
+        <h1 className="mt-4 font-serif text-4xl font-semibold leading-tight text-slate-950 sm:text-5xl lg:text-6xl">
           Works Cited
         </h1>
         <p className="mt-6 text-lg leading-8 text-slate-700">
