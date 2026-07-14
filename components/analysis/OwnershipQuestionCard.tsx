@@ -1,10 +1,10 @@
 import {
   ArrowUp,
+  ArrowUpDown,
   Building2,
   Network,
   Server,
-  UserRound,
-  UtilityPole
+  UserRound
 } from "lucide-react";
 
 const hierarchy = [
@@ -22,7 +22,7 @@ const hierarchy = [
   },
   {
     label: "Elevator-5",
-    Icon: UtilityPole
+    Icon: ArrowUpDown
   },
   {
     label: "Resident 5305",
@@ -73,13 +73,13 @@ export function OwnershipQuestionCard() {
               <div className="space-y-4">
                 {hierarchy.map(({ label, Icon }, index) => (
                   <div className="relative" key={label}>
-                    <div className="grid min-h-16 items-center rounded-lg border border-[#cfdde8] bg-[#f8fbfd] px-5 shadow-sm sm:grid-cols-[3.5rem_1fr]">
+                    <div className="grid min-h-16 grid-cols-[2.75rem_auto] items-center justify-center gap-4 rounded-lg border border-[#cfdde8] bg-[#f8fbfd] px-5 text-center shadow-sm">
                       <Icon
                         aria-hidden="true"
-                        className="mx-auto size-7 text-[#34485b]"
+                        className="size-7 text-[#34485b]"
                         strokeWidth={1.6}
                       />
-                      <p className="text-center text-base font-semibold text-[#223748] sm:text-left">
+                      <p className="text-base font-semibold text-[#223748]">
                         {label}
                       </p>
                     </div>
