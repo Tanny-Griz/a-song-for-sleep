@@ -53,31 +53,6 @@ export function Hero() {
       <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(244,247,250,0.96)_0%,rgba(244,247,250,0.9)_34%,rgba(244,247,250,0.48)_58%,rgba(244,247,250,0.06)_100%)]" />
       <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(7,17,31,0.04),rgba(7,17,31,0.08))]" />
 
-      <div className="absolute inset-x-0 top-0 z-20 border-b border-[#dce5ec]/80 bg-white/55 backdrop-blur-md">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 sm:px-8 lg:px-10">
-          <div className="flex items-center gap-3">
-            <span className="grid size-9 place-items-center rounded border border-[#9fb7c8] text-[#0a2235]">
-              <span className="h-5 w-3 border-x border-t border-[#0a2235]" />
-            </span>
-            <div>
-              <p className="text-xs font-semibold uppercase tracking-[0.16em] text-[#07111f]">
-                Smartlit Analytics
-              </p>
-              <p className="hidden text-[11px] text-[#657381] sm:block">
-                Understanding stories. Designing futures.
-              </p>
-            </div>
-          </div>
-
-          <Link
-            className="hidden rounded border border-[#b7c8d5] bg-white/70 px-4 py-2 text-xs font-semibold uppercase tracking-[0.16em] text-[#07111f] transition hover:border-[#4f9fc4] hover:text-[#1f79a3] sm:inline-flex"
-            href="/analysis"
-          >
-            Enter
-          </Link>
-        </div>
-      </div>
-
       <div className="relative z-10 mx-auto flex min-h-[100svh] max-w-7xl items-center px-5 pb-10 pt-28 sm:px-8 lg:px-10">
         <div className="w-full max-w-xl">
           <p className="mb-3 text-[0.72rem] font-semibold uppercase tracking-[0.32em] text-[#2b7fa7] sm:text-sm">
