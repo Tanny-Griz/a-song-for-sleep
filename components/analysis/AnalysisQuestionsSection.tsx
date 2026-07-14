@@ -1,6 +1,7 @@
 import { ClassificationFailureCard } from "@/components/analysis/ClassificationFailureCard";
 import { ConsumerPredictionCard } from "@/components/analysis/ConsumerPredictionCard";
 import { DataBeneficiariesCard } from "@/components/analysis/DataBeneficiariesSection";
+import { InstitutionalPrivacyCard } from "@/components/analysis/InstitutionalPrivacyCard";
 import { OwnershipQuestionCard } from "@/components/analysis/OwnershipQuestionCard";
 import { PrivateLifeResourceCard } from "@/components/analysis/PrivateLifeResourceCard";
 
@@ -13,6 +14,7 @@ export function AnalysisQuestionsSection() {
         <PrivateLifeResourceCard />
         <ConsumerPredictionCard />
         <ClassificationFailureCard />
+        <InstitutionalPrivacyCard />
       </div>
 
       <div className="mx-auto hidden max-w-7xl gap-6 xl:grid xl:grid-cols-2 xl:items-start">
@@ -24,6 +26,7 @@ export function AnalysisQuestionsSection() {
         <div className="grid gap-6">
           <DataBeneficiariesCard />
           <ConsumerPredictionCard />
+          <InstitutionalPrivacyCard />
         </div>
       </div>
     </section>

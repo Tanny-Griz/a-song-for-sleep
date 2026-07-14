@@ -1,3 +1,4 @@
+import { AnalysisKeyIdea } from "@/components/analysis/AnalysisKeyIdea";
 import {
   ArrowRight,
   BadgeAlert,
@@ -206,27 +207,10 @@ export function ClassificationFailureCard() {
         ))}
       </div>
 
-      <div className="mt-7 grid gap-4 rounded-lg border border-[#cfdde8] bg-[#f8fbfd] p-5 sm:grid-cols-[3rem_1fr_2rem_1fr] sm:items-center">
-        <Heart
-          aria-hidden="true"
-          className="size-9 text-[#2d6ea3]"
-          strokeWidth={1.5}
-        />
-        <p className="text-sm leading-6 text-[#34485b]">
-          <span className="font-serif text-xl font-semibold text-[#07111f]">
-            Systems are built to classify.
-          </span>{" "}
-          Human value is not completed by data.
-        </p>
-        <ArrowRight
-          aria-hidden="true"
-          className="hidden size-6 text-[#7ea7c2] sm:block"
-          strokeWidth={1.6}
-        />
-        <p className="font-serif text-xl font-semibold leading-snug text-[#07111f]">
-          What cannot be classified may still be deeply human.
-        </p>
-      </div>
+      <AnalysisKeyIdea>
+        Systems are built to classify. What cannot be classified may still be
+        deeply human.
+      </AnalysisKeyIdea>
     </article>
   );
 }

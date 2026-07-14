@@ -1,9 +1,9 @@
+import { AnalysisKeyIdea } from "@/components/analysis/AnalysisKeyIdea";
 import {
   ChartColumnIncreasing,
   Clock3,
   HeartPulse,
   HouseWifi,
-  Lightbulb,
   Route,
   UserRound
 } from "lucide-react";
@@ -83,16 +83,9 @@ export function PrivateLifeResourceCard() {
         ))}
       </div>
 
-      <div className="mt-7 grid gap-4 rounded-lg border border-[#cfdde8] bg-[#f8fbfd] p-5 sm:grid-cols-[3.5rem_1fr] sm:items-center">
-        <Lightbulb
-          aria-hidden="true"
-          className="size-9 text-[#2d6ea3]"
-          strokeWidth={1.5}
-        />
-        <p className="font-serif text-xl font-semibold leading-snug text-[#07111f]">
-          The resident lives her life. The system extracts value from it.
-        </p>
-      </div>
+      <AnalysisKeyIdea>
+        The resident lives her life. The system extracts value from it.
+      </AnalysisKeyIdea>
     </article>
   );
 }
