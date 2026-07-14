@@ -1,3 +1,4 @@
+import { CareBeyondValueCard } from "@/components/analysis/CareBeyondValueCard";
 import { ClassificationFailureCard } from "@/components/analysis/ClassificationFailureCard";
 import { ConsumerPredictionCard } from "@/components/analysis/ConsumerPredictionCard";
 import { DataBeneficiariesCard } from "@/components/analysis/DataBeneficiariesSection";
@@ -17,6 +18,7 @@ export function AnalysisQuestionsSection() {
         <ClassificationFailureCard />
         <InstitutionalPrivacyCard />
         <MemoryErasureCard />
+        <CareBeyondValueCard />
       </div>
 
       <div className="mx-auto hidden max-w-7xl gap-6 xl:grid xl:grid-cols-2 xl:items-start">
@@ -30,6 +32,7 @@ export function AnalysisQuestionsSection() {
           <DataBeneficiariesCard />
           <ConsumerPredictionCard />
           <InstitutionalPrivacyCard />
+          <CareBeyondValueCard />
         </div>
       </div>
     </section>
