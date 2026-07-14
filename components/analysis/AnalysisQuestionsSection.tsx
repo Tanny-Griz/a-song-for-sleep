@@ -1,3 +1,4 @@
+import { ClassificationFailureCard } from "@/components/analysis/ClassificationFailureCard";
 import { ConsumerPredictionCard } from "@/components/analysis/ConsumerPredictionCard";
 import { DataBeneficiariesCard } from "@/components/analysis/DataBeneficiariesSection";
 import { OwnershipQuestionCard } from "@/components/analysis/OwnershipQuestionCard";
@@ -11,12 +12,14 @@ export function AnalysisQuestionsSection() {
         <DataBeneficiariesCard />
         <PrivateLifeResourceCard />
         <ConsumerPredictionCard />
+        <ClassificationFailureCard />
       </div>
 
       <div className="mx-auto hidden max-w-7xl gap-6 xl:grid xl:grid-cols-2 xl:items-start">
         <div className="grid gap-6">
           <OwnershipQuestionCard />
           <PrivateLifeResourceCard />
+          <ClassificationFailureCard />
         </div>
         <div className="grid gap-6">
           <DataBeneficiariesCard />
