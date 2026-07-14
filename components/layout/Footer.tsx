@@ -39,6 +39,18 @@ export function Footer() {
             <span className="size-3 rounded-full border border-white/80" />
             <span className="h-px w-20 bg-white/45" />
           </div>
+          <p className="mt-6 text-xs font-medium uppercase tracking-[0.16em] text-white/62">
+            Created by Tanya Kovalenko
+            <span className="mx-3 text-white/35">/</span>
+            <a
+              className="border-b border-white/28 pb-1 text-white/78 transition hover:border-white/70 hover:text-white"
+              href="https://okwebdev.com"
+              rel="noreferrer"
+              target="_blank"
+            >
+              okwebdev.com
+            </a>
+          </p>
         </div>
       </div>
     </footer>
