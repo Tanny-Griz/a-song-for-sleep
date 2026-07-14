@@ -8,7 +8,7 @@ const marxistQuestions = [
   "How is consumer behavior predicted?",
   "What happens when a person cannot be classified?",
   "How does institutional power affect privacy?",
-  "Is Elevator-5 also a controlled worker?",
+  "What Happens When a Person Cannot Be Classified?",
   "Can care exist outside economic value?"
 ];
 

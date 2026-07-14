@@ -1,3 +1,4 @@
+import { AnalysisKeyIdea } from "@/components/analysis/AnalysisKeyIdea";
 import {
   Building2,
   Camera,
@@ -85,6 +86,11 @@ export function DataBeneficiariesCard() {
           </div>
         ))}
       </div>
+
+      <AnalysisKeyIdea>
+        The person who generates the data often has the
+        least control over how it is stored, interpreted, and monetized.
+      </AnalysisKeyIdea>
     </article>
   );
 }
