@@ -120,6 +120,23 @@ a {
   animation: promise-dot-glow 2.4s ease-in-out infinite;
 }
 
+.knowledge-donut {
+  background: conic-gradient(#4f89ad 0 82%, #d3e3ed 82% 100%);
+  animation: knowledge-donut-settle 1s ease both;
+}
+
+.knowledge-wave {
+  --wave-height: 20px;
+  height: var(--wave-height);
+  transform-origin: center;
+  animation: knowledge-wave-soft 1.8s ease-in-out infinite;
+}
+
+.knowledge-forecast-dot {
+  opacity: 0;
+  animation: knowledge-dot-in 0.5s ease forwards;
+}
+
 @keyframes promise-rise {
   from {
     opacity: 0;
@@ -166,6 +183,35 @@ a {
   }
 }
 
+@keyframes knowledge-donut-settle {
+  from {
+    opacity: 0;
+    transform: rotate(-24deg) scale(0.94);
+  }
+
+  to {
+    opacity: 1;
+    transform: rotate(0deg) scale(1);
+  }
+}
+
+@keyframes knowledge-wave-soft {
+  0%,
+  100% {
+    transform: scaleY(0.72);
+  }
+
+  50% {
+    transform: scaleY(1);
+  }
+}
+
+@keyframes knowledge-dot-in {
+  to {
+    opacity: 1;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
@@ -187,7 +233,10 @@ a {
   .promise-line,
   .promise-bar,
   .promise-check,
-  .promise-dot {
+  .promise-dot,
+  .knowledge-donut,
+  .knowledge-wave,
+  .knowledge-forecast-dot {
     animation: none;
   }
 
@@ -197,5 +246,9 @@ a {
 
   .promise-bar {
     height: var(--bar-height);
+  }
+
+  .knowledge-forecast-dot {
+    opacity: 1;
   }
 }
