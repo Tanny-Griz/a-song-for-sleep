@@ -1,4 +1,5 @@
 import { BuildingKnowsSection } from "@/components/home/BuildingKnowsSection";
+import { CriticalLensSection } from "@/components/home/CriticalLensSection";
 import { Hero } from "@/components/home/Hero";
 import { HumanDataProfileSection } from "@/components/home/HumanDataProfileSection";
 import { IncompleteProfileSection } from "@/components/home/IncompleteProfileSection";
@@ -12,6 +13,7 @@ export default function HomePage() {
       <BuildingKnowsSection />
       <IncompleteProfileSection />
       <HumanDataProfileSection />
+      <CriticalLensSection />
     </main>
   );
 }
