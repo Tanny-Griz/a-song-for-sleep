@@ -9,31 +9,37 @@ import {
   UserRound,
   Clipboard
 } from "lucide-react";
+import { MissingDataAudioButton } from "@/components/home/MissingDataAudioButton";
 
 const missingDataCards = [
   {
     title: "No destination found",
     status: "Unregistered",
+    audioSrc: "/audio/No destination found.m4a",
     Icon: MapPinX
   },
   {
     title: "No schedule found",
     status: "No routine",
+    audioSrc: "/audio/No schedule found.m4a",
     Icon: CalendarX2
   },
   {
     title: "No music library found",
     status: "Preference unknown",
+    audioSrc: "/audio/No music library found.m4a",
     Icon: Music2
   },
   {
     title: "No content found",
     status: "Unsynced",
+    audioSrc: "/audio/No content found.m4a",
     Icon: FileX2
   },
   {
     title: "Device access denied",
     status: "Limited access",
+    audioSrc: "/audio/Device access denied.m4a",
     Icon: LockKeyhole
   }
 ];
@@ -95,9 +101,9 @@ export function IncompleteProfileSection() {
           </div>
 
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
-            {missingDataCards.map(({ title, status, Icon }, index) => (
+            {missingDataCards.map(({ title, status, audioSrc, Icon }, index) => (
               <article
-                className="incomplete-card promise-card relative min-h-48 overflow-hidden rounded-lg border border-[#e0aaa5] bg-white/68 p-5 text-center shadow-[0_16px_45px_rgba(105,35,28,0.08)] backdrop-blur transition duration-300 hover:-translate-y-1 hover:border-[#cf6c65] hover:shadow-[0_22px_60px_rgba(105,35,28,0.13)]"
+                className="incomplete-card promise-card relative flex min-h-80 flex-col overflow-hidden rounded-lg border border-[#e0aaa5] bg-white/68 p-5 text-center shadow-[0_16px_45px_rgba(105,35,28,0.08)] backdrop-blur transition duration-300 hover:-translate-y-1 hover:border-[#cf6c65] hover:shadow-[0_22px_60px_rgba(105,35,28,0.13)]"
                 key={title}
                 style={{ animationDelay: `${index * 110}ms` }}
               >
@@ -113,6 +119,7 @@ export function IncompleteProfileSection() {
                 <p className="mt-8 font-mono text-[0.68rem] font-semibold uppercase tracking-[0.14em] text-[#c0524b]">
                   {status}
                 </p>
+                <MissingDataAudioButton label={title} src={audioSrc} />
               </article>
             ))}
           </div>
