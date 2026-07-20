@@ -1,3 +1,4 @@
+import { ReflectionChallenges } from "@/components/reflection/ReflectionChallenges";
 import Image from "next/image";
 
 export default function ReflectionPage() {
@@ -44,6 +45,7 @@ export default function ReflectionPage() {
           </div>
         </div>
       </section>
+      <ReflectionChallenges />
     </main>
   );
 }
