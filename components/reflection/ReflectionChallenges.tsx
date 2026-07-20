@@ -39,7 +39,7 @@ const challenges = [
   {
     title: "Choosing the right mode for each idea",
     summary:
-      "Not every idea works best as an image. Some needed written explanation, while others worked better as comparison panels, diagrams, status cards, or interaction. The challenge was deciding whether an idea should be read, seen, heard, or revealed through use.",
+      "Not every idea works best as an image. Some needed written explanation, while others worked better as comparison panels, diagrams, status cards, or interaction. The challenge was deciding whether an idea should be read, seen, or revealed through use.",
     tags: ["mode choice", "visual argument", "written analysis"],
     Icon: Paintbrush
   },

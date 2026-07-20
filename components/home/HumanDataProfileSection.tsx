@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { ProfileConfidenceProgress } from "@/components/home/ProfileConfidenceProgress";
 import {
   Activity,
   CalendarDays,
@@ -196,16 +197,7 @@ export function HumanDataProfileSection() {
               </ul>
 
               <div className="mt-5">
-                <div
-                  aria-label="Profile confidence low, five percent complete"
-                  aria-valuemax={100}
-                  aria-valuemin={0}
-                  aria-valuenow={5}
-                  className="h-4 overflow-hidden rounded-full border border-[#c2d4e2] bg-[#dce8f1]"
-                  role="progressbar"
-                >
-                  <div className="profile-confidence-fill h-full rounded-full bg-[#4f89d8]" />
-                </div>
+                <ProfileConfidenceProgress />
                 <p className="mt-3 font-mono text-sm font-semibold uppercase tracking-[0.16em] text-[#3d78ad]">
                   Profile confidence: low
                 </p>
