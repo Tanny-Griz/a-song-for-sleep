@@ -85,6 +85,10 @@ export function MissingDataAudioButton({
         Tap to hear
       </p>
 
+      <p className="mt-2 text-xs font-semibold uppercase tracking-[0.12em] text-[#a7605b]">
+        <span className="font-serif normal-case tracking-normal">(Chung)</span>
+      </p>
+
       <audio
         onEnded={() => setIsPlaying(false)}
         onPause={() => setIsPlaying(false)}
