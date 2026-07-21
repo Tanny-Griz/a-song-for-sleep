@@ -1,5 +1,6 @@
 import { ReflectionChallenges } from "@/components/reflection/ReflectionChallenges";
 import { ReflectionMultimodality } from "@/components/reflection/ReflectionMultimodality";
+import { ReflectionUseBeyondClass } from "@/components/reflection/ReflectionUseBeyondClass";
 import Image from "next/image";
 
 export default function ReflectionPage() {
@@ -48,6 +49,7 @@ export default function ReflectionPage() {
       </section>
       <ReflectionChallenges />
       <ReflectionMultimodality />
+      <ReflectionUseBeyondClass />
     </main>
   );
 }
