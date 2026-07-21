@@ -19,37 +19,37 @@ type ViewMode = "website" | "compare" | "essay";
 
 const comparisonRows = [
   {
-    websiteTitle: "Visualize Institutional Power",
+    websiteTitle: "Visualize Power and Control",
     websiteText:
-      "System labels, access restrictions, and profile fields make control visible.",
-    essayTitle: "Explain Institutional Power",
+      "Profile fields, system warnings, and access restrictions show how the building observes, categorizes, and limits the resident.",
+    essayTitle: "Explain Power and Control",
     essayText:
-      "A traditional essay can describe control, but it cannot display it as an interface.",
+      "A traditional essay could explain how the system controls the resident, but the reader would encounter that power through linear description rather than as a visible interface.",
     WebsiteIcon: Network,
     EssayIcon: FileText
   },
   {
-    websiteTitle: "Turn Private Life into Data",
+    websiteTitle: "Visualize How Private Life Becomes Data",
     websiteText:
-      "Health, movement, appliance use, and preferences appear as measurable categories.",
-    essayTitle: "Describe Data Collection",
+      "Health, movement, appliance use, and preferences appear as measurable profile fields.",
+    essayTitle: "Describe How Private Life Becomes Data",
     essayText:
-      "A traditional essay can list the data, but not show a life being sorted into a profile.",
+      "A traditional essay can explain what information is collected, but the reader encounters it in paragraphs rather than seeing a person’s life sorted into a data profile.",
     WebsiteIcon: HeartPulse,
     EssayIcon: Table2
   },
   {
-    websiteTitle: "Compare Human and System Value",
+    websiteTitle: "Compare Human Identity and Data Profile",
     websiteText:
-      "Side-by-side cards reveal the gap between a person and a data model.",
-    essayTitle: "Discuss the Contrast in Writing",
+      "Side-by-side cards reveal the gap between a complete human life and what the system can measure.",
+    essayTitle: "Explain the Contrast Sequentially",
     essayText:
-      "A traditional essay can explain the contrast, but not make it visible all at once.",
+      "A traditional essay can describe both sides, but readers encounter them one after another instead of comparing them at the same moment.",
     WebsiteIcon: Scale,
     EssayIcon: MessagesSquare
   },
   {
-    websiteTitle: "Hear and Navigate the System",
+    websiteTitle: "Hear and Interact with the System",
     websiteText:
       "Audio cards and structured sections let readers encounter Elevator-5 as a voice.",
     essayTitle: "Quote the System from a Distance",
