@@ -39,7 +39,7 @@ export function OwnershipQuestionCard() {
         </div>
         <div>
           <h2 className="font-serif text-4xl font-semibold leading-tight text-[#07111f]">
-            Who Owns the System?
+            Who owns and controls the system?
           </h2>
           <p className="mt-3 max-w-2xl text-sm leading-6 text-[#34485b]">
             Power flows upward. Ownership and control remain at the top, while

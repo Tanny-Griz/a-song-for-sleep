@@ -61,8 +61,8 @@ export function IncompleteProfileSection() {
           </div>
         </div>
 
-        <div className="grid gap-8 lg:grid-cols-[0.28fr_0.72fr] lg:items-center">
-          <div className="promise-reveal lg:border-r lg:border-[#ead9d7] lg:pr-10">
+        <div className="grid gap-8 xl:grid-cols-[0.28fr_0.72fr] xl:items-center">
+          <div className="promise-reveal xl:border-r xl:border-[#ead9d7] xl:pr-10">
             <div className="mb-5">
               <span className="mb-4 grid size-14 place-items-center rounded-full border border-[#d77d78] bg-white/72 text-[#b94842] shadow-sm">
                 <TriangleAlert aria-hidden="true" className="size-7" strokeWidth={1.7} />
