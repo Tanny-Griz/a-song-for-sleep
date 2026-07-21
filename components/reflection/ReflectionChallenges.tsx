@@ -32,7 +32,7 @@ const challenges = [
   {
     title: "Turning a long argument into a website structure",
     summary:
-      "A traditional essay moves paragraph by paragraph. For this project, I had to decide what belonged on the homepage, what belonged on the Analysis page, how to divide the argument into questions, and how the visitor should move through those ideas.",
+      "A traditional essay moves paragraph by paragraph. For this project, I had to decide what belonged on the Experience page, what belonged on the Analysis, how to divide the argument into questions, and how the visitor should move through those ideas.",
     tags: ["site hierarchy", "question cards", "reader path"],
     Icon: PanelsTopLeft
   },
@@ -53,7 +53,7 @@ const challenges = [
   {
     title: "Creating interactivity without overload",
     summary:
-      "I had many ideas: sliders, expanding cards, glitch effects, sound, and scroll animation. Too much interaction would distract from the analysis, so I kept only interactions that helped the argument, such as system errors, comparison cards, and focused navigation.",
+      "I had many ideas for the website, including sliders, expandable cards, glitch effects, audio, and scroll-based animations. However, too much interaction could distract readers from the literary analysis. I kept only elements that served a clear purpose: clickable audio cards give Elevator-5 a voice, accordions organize longer sections, subtle animations control the pacing, and the progress indicator helps readers navigate the reflection. I also kept the Human Being vs. Data Profile comparison static so readers could focus on the contrast without distraction.",
     tags: ["restraint", "purposeful motion", "interactive evidence"],
     Icon: MousePointerClick
   }
@@ -131,7 +131,7 @@ export function ReflectionChallenges() {
     null
   );
   const [viewedChallenges, setViewedChallenges] = useState<Set<number>>(
-    () => new Set()
+    () => new Set([0])
   );
   const activeChallenge = challenges[activeIndex];
   const viewedProgress = (viewedChallenges.size / challenges.length) * 100;

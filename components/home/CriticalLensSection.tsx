@@ -1,26 +1,33 @@
 import Link from "next/link";
-import { ArrowRight, Database, Landmark, Scale, Search, UsersRound } from "lucide-react";
+import {
+  ArrowRight,
+  BarChart3,
+  Database,
+  Heart,
+  Landmark,
+  Search
+} from "lucide-react";
 
 const lensCards = [
   {
-    title: "Power",
-    text: "The system determines who is visible and whose life is rendered invisible.",
+    title: "Ownership",
+    text: "The building’s owners control the system, while residents have little control over how their lives are monitored.",
     Icon: Landmark
   },
   {
-    title: "Data",
-    text: "Information is collected selectively, reinforcing gaps and silences.",
+    title: "Data as a Resource",
+    text: "Private information becomes a resource used for profiling, prediction, and commercial benefit.",
     Icon: Database
   },
   {
-    title: "Labor",
-    text: "Unseen work, cleaning, care, maintenance, keeps the system running.",
-    Icon: UsersRound
+    title: "Consumer Prediction",
+    text: "Behavioral patterns allow the system to anticipate residents’ needs and influence future consumption.",
+    Icon: BarChart3
   },
   {
-    title: "Value",
-    text: "Technology extracts value from behavior while ignoring human worth.",
-    Icon: Scale
+    title: "Human Value",
+    text: "The system measures residents through data but cannot measure memory, care, grief, or dignity.",
+    Icon: Heart
   }
 ];
 
