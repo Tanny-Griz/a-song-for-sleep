@@ -1,3 +1,4 @@
+import { ClosingReflection } from "@/components/reflection/ClosingReflection";
 import { ReflectionChallenges } from "@/components/reflection/ReflectionChallenges";
 import { ReflectionMultimodality } from "@/components/reflection/ReflectionMultimodality";
 import { ReflectionUseBeyondClass } from "@/components/reflection/ReflectionUseBeyondClass";
@@ -50,6 +51,7 @@ export default function ReflectionPage() {
       <ReflectionChallenges />
       <ReflectionMultimodality />
       <ReflectionUseBeyondClass />
+      <ClosingReflection />
     </main>
   );
 }
