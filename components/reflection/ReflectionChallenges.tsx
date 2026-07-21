@@ -160,7 +160,7 @@ export function ReflectionChallenges() {
     <section className="relative border-b border-[#d7e1e9] bg-[#f4f7fa] px-5 pb-[calc(var(--section-padding-y)+3.5rem)] pt-[var(--section-padding-y)] sm:px-8 lg:px-10 lg:py-[var(--section-padding-y)]">
       <div className="mx-auto max-w-7xl">
         <div>
-          <h2 className="font-serif text-4xl font-semibold leading-tight text-[#07111f] sm:text-5xl lg:text-6xl">
+          <h2 className="font-serif text-4xl font-semibold leading-tight text-[#07111f] sm:text-5xl">
             Challenges of Composing Multimodally
           </h2>
           <p className="mt-4 max-w-3xl text-base leading-8 text-[#34485b] sm:text-lg">

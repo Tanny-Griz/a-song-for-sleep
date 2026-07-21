@@ -1,4 +1,5 @@
 import { ReflectionChallenges } from "@/components/reflection/ReflectionChallenges";
+import { ReflectionMultimodality } from "@/components/reflection/ReflectionMultimodality";
 import Image from "next/image";
 
 export default function ReflectionPage() {
@@ -14,7 +15,7 @@ export default function ReflectionPage() {
               Project Reflection.
             </h1>
             <p className="mt-6 max-w-xl text-xl leading-8 tracking-[0.08em] text-[#4f7897] sm:text-2xl sm:leading-10">
-              Composing a literary argument through code, image, animation, and interaction.
+              Composing a literary argument through code, image, animation, sound effects and interaction.
             </p>
 
             <div className="mt-8 h-px w-24 bg-[#4f9fc4]">
@@ -46,6 +47,7 @@ export default function ReflectionPage() {
         </div>
       </section>
       <ReflectionChallenges />
+      <ReflectionMultimodality />
     </main>
   );
 }
