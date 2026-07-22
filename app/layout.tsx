@@ -9,8 +9,8 @@ export const metadata: Metadata = {
   title: "A Song for Sleep | Multimodal Literary Analysis",
   description:
     "An interactive multimodal literary analysis of Bora Chung's A Song for Sleep through a Marxist critical lens.",
-  authors: [{ name: "Tia Kovalenko" }],
-  creator: "Tia Kovalenko",
+  authors: [{ name: "Tanya Kovalenko" }],
+  creator: "Tanya Kovalenko",
   alternates: {
     canonical: "/"
   },
