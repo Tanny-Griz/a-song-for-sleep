@@ -28,7 +28,7 @@ export function ProjectOverviewSection({ className = "" }: { className?: string 
       <div className="mt-4 grid gap-4 lg:grid-cols-3">
         {overviewItems.map(({ eyebrow, text, Icon }, index) => (
           <article
-            className="promise-card group grid gap-4 rounded-xl border border-white/70 bg-white/48 p-4 shadow-[0_18px_55px_rgba(28,70,105,0.13)] backdrop-blur-xl transition duration-300 hover:-translate-y-0.5 hover:bg-white/62 sm:grid-cols-[3.5rem_1fr_auto] sm:items-center"
+            className="promise-card grid gap-4 rounded-xl border border-white/70 bg-white/48 p-4 shadow-[0_18px_55px_rgba(28,70,105,0.13)] backdrop-blur-xl transition duration-300 hover:-translate-y-0.5 hover:bg-white/62 sm:grid-cols-[3.5rem_1fr] sm:items-center"
             key={eyebrow}
             style={{ animationDelay: `${index * 120}ms` }}
           >
@@ -43,12 +43,6 @@ export function ProjectOverviewSection({ className = "" }: { className?: string 
                 {text}
               </p>
             </div>
-            <span
-              aria-hidden="true"
-              className="hidden text-2xl leading-none text-[#4f9fc4] transition duration-300 group-hover:translate-x-0.5 sm:block"
-            >
-              ›
-            </span>
           </article>
         ))}
       </div>
