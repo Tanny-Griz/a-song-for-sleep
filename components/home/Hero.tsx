@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { ProjectOverviewSection } from "@/components/home/ProjectOverviewSection";
 import {
   CalendarDays,
   ChartNoAxesColumn,
@@ -52,7 +53,7 @@ export function Hero() {
       <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(244,247,250,0.96)_0%,rgba(244,247,250,0.9)_34%,rgba(244,247,250,0.48)_58%,rgba(244,247,250,0.06)_100%)]" />
       <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(7,17,31,0.04),rgba(7,17,31,0.08))]" />
 
-      <div className="relative z-10 mx-auto flex min-h-[100svh] max-w-7xl items-center px-5 pb-10 pt-28 sm:px-8 lg:px-10">
+      <div className="relative z-10 mx-auto flex min-h-[100svh] max-w-7xl flex-col justify-center px-5 pb-10 pt-28 sm:px-8 lg:px-10">
         <div className="w-full max-w-xl">
           <p className="mb-3 text-[0.72rem] font-semibold uppercase tracking-[0.32em] text-[#2b7fa7] sm:text-sm">
             A Multimodal Literary Analysis
@@ -114,6 +115,8 @@ export function Hero() {
             </dl>
           </div>
         </div>
+
+        <ProjectOverviewSection className="mt-6 w-full max-w-5xl" />
       </div>
     </section>
   );
